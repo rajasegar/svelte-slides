@@ -1,0 +1,43 @@
+<section>
+  <h2>Examples of embedded Video, Audio and Iframes</h2>
+</section>
+
+<section>
+  <h2>Iframe</h2>
+  <iframe data-autoplay width="700" height="540" src="https://slides.com/news/auto-animate/embed" frameborder="0"></iframe>
+</section>
+
+<section data-background-iframe="https://www.youtube.com/embed/h1_nyI3z8gI" data-background-interactive>
+  <h2 style="color: #fff;">Iframe Background</h2>
+</section>
+
+<section>
+  <h2>Video</h2>
+  <video src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" data-autoplay></video>
+</section>
+
+<section data-background-video="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">
+  <h2>Background Video</h2>
+</section>
+
+<section>
+  <h2>Auto-playing audio</h2>
+  <audio src="assets/beeping.wav" data-autoplay></audio>
+</section>
+
+<section>
+  <h2>Audio inside slide fragments</h2>
+  <div class="fragment">
+    Beep 1
+    <audio src="assets/beeping.wav" data-autoplay></audio>
+  </div>
+  <div class="fragment">
+    Beep 2
+    <audio src="assets/beeping.wav" data-autoplay></audio>
+  </div>
+</section>
+
+<section>
+  <h2>Audio with controls</h2>
+  <audio src="assets/beeping.wav" controls></audio>
+</section>
