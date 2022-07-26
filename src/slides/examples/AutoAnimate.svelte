@@ -6,10 +6,17 @@
   <p>This will fade out</p>
   <img src={logo} style="height: 100px;">
   <pre data-id="code"><code data-line-numbers class="hljs" data-trim>
-  {`
-    function Example() {
-      const [count, setCount] = useState(0);
-    }
+  {@html `
+<script>
+  let count = 0;
+</script>
+<p>{count}</p>
+<p>
+<button on:click={() => count += 1}>Increment</button>
+</p>
+<p>
+<button on:click={() => count -= 1}>Decrement</button>
+</p>
   `}
   </code></pre>
 </section>
