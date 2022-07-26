@@ -1,9 +1,10 @@
 # Reveal.js + Svelte + Vite
 
-This template should help get you started developing awesome slide decks using [Reveal.js](https://revealjs.com) with Svelte in Vite.
+This template should help get you started creating awesome slide decks using [Reveal.js](https://revealjs.com) with Svelte in Vite.
 
 ## How does it work?
 - Your slides are both Svelte components and Reveal.js slides.
+- You can have one or more slides (using `<section/>`) within a single Svelte component.
 - Create new slides as Svelte components under `src/slides`
 - Just import and include your components inside the `src/Presentation.svelte` component
 - That's it, you are good to go.
@@ -24,21 +25,24 @@ You can customize the `Reveal.js` setup in `src/config.js`.
 </ul>
 
 <h2>Sample code</h2>
+You can insert code blocks using template literals inside `<pre>` and `<code>` elements.
+
     <pre>
     <code data-line-numbers data-trim data-no-escape>
-    {
-    `const name = "hello world";
-    if(name === 'hello') {
-      console.log('world');
-    }
-    `
-    }
+    {`
+      const name = "hello world";
+      if(name === 'hello') {
+        console.log('world');
+      }
+    `}
     </code>
     </pre>
 </section>
 ```
 
 ### src/Presentation.svelte
+The slide order is the order in which you layout your Svelte components.
+
 ```html
 <script>
     import Title          from './slides/Title.svelte';
