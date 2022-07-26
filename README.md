@@ -1,6 +1,15 @@
-# Svelte + Vite
+# Reveal.js + Svelte + Vite
 
-This template should help get you started developing with Svelte in Vite.
+This template should help get you started developing awesome slide decks using [Reveal.js](https://revealjs.com) with Svelte in Vite.
+
+## How does it work?
+- Your slides are both Svelte components and Reveal.js slides.
+- Create new slides as Svelte components under `src/slides`
+- Just import and include your components inside the `src/Presentation.svelte` component
+- That's it, you are good to go.
+
+## Configuring Reveal.js
+You can customize the `Reveal.js` setup in `src/config.js`.
 
 ## Recommended IDE Setup
 
