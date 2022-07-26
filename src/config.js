@@ -1,6 +1,6 @@
 import Highlight from 'reveal.js/plugin/highlight/highlight';
 import Markdown from 'reveal.js/plugin/markdown/markdown';
-//import Math from 'reveal.js/plugin/math/math';
+import MathReveal from 'reveal.js/plugin/math/math';
 
 // Import theme
 import 'reveal.js/dist/theme/black.css';
@@ -15,16 +15,16 @@ export default {
     },
     // Reveal Config
     reveal: {
-        plugins: [Highlight, Markdown],
+        plugins: [Highlight, Markdown, MathReveal.MathJax2],
         hash: true,
-      //mathjax2: {
-      //  config: 'TeX-AMS_HTML-full',
-      //  TeX: {
-      //    Macros: {
-      //      R: '\\mathbb{R}',
-      //      set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
-      //    }
-      //  }
-      //},
+      mathjax2: {
+        config: 'TeX-AMS_HTML-full',
+        TeX: {
+          Macros: {
+            R: '\\mathbb{R}',
+            set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+          }
+        }
+      },
     },
 };

@@ -5,69 +5,82 @@
 
 <section>
   <h3>The Lorenz Equations</h3>
-  {@html
-  \[\begin{aligned}
-  \dot{x} &amp; = \sigma(y-x) \\
-  \dot{y} &amp; = \rho x - y - xz \\
-  \dot{z} &amp; = -\beta z + xy
-  \end{aligned} \]
-  }
+  {`
+  \\begin{align}
+\\dot{x} & = \\sigma(y-x) \\\\
+\\dot{y} & = \\rho x - y - xz \\\\
+\\dot{z} & = -\\beta z + xy
+\\end{align}
+    `}
 </section>
 
-<!--<section>
+<section>
   <h3>The Cauchy-Schwarz Inequality</h3>
 
-<script type="math/tex; mode=display">
-  \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-</script>
+<!--<script type="math/tex; mode=display">-->
+  {`
+  \\[
+   \\left( \\sum_{k=1}^n a_k b_k \\right)^{\\!\\!2} \\leq
+   \\left( \\sum_{k=1}^n a_k^2 \\right) 
+   \\left( \\sum_{k=1}^n b_k^2 \\right)
+\\]
+`}
+<!--</script>-->
 </section>
 
 <section>
   <h3>A Cross Product Formula</h3>
+  {`
 
-  \[\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
-  \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
-  \frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\
-  \frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0
-  \end{vmatrix}  \]
+  \\[\\mathbf{V}_1 \\times \\mathbf{V}_2 =  \\begin{vmatrix}
+  \\mathbf{i} &amp; \\mathbf{j} &amp; \\mathbf{k} \\
+  \\frac{\\partial X}{\\partial u} &amp;  \\frac{\\partial Y}{\\partial u} &amp; 0 \\
+  \\frac{\\partial X}{\\partial v} &amp;  \\frac{\\partial Y}{\\partial v} &amp; 0
+  \\end{vmatrix}  \\]
+  `}
 </section>
 
 <section>
   <h3>The probability of getting \(k\) heads when flipping \(n\) coins is</h3>
-
-  \[P(E)   = {n \choose k} p^k (1-p)^{ n-k} \]
+  {`
+  \\[P(E)   = {n \\choose k} p^k (1-p)^{ n-k} \\]
+  `}
 </section>
 
 <section>
   <h3>An Identity of Ramanujan</h3>
-
-  \[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
-  1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
-  {1+\frac{e^{-8\pi}} {1+\ldots} } } } \]
+  {`
+  \\[ \\frac{1}{\\Bigl(\\sqrt{\\phi \\sqrt{5}}-\\phi\\Bigr) e^{\\frac25 \\pi}} =
+  1+\\frac{e^{-2\\pi}} {1+\\frac{e^{-4\\pi}} {1+\\frac{e^{-6\\pi}}
+  {1+\\frac{e^{-8\\pi}} {1+\\ldots} } } } \\]
+  `}
 </section>
 
 <section>
   <h3>A Rogers-Ramanujan Identity</h3>
-
-  \[  1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots =
-  \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}\]
+  {`
+  \\[  1 +  \\frac{q^2}{(1-q)}+\\frac{q^6}{(1-q)(1-q^2)}+\\cdots =
+  \\prod_{j=0}^{\\infty}\\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}\\]
+  `}
 </section>
 
 <section>
   <h3>Maxwell&#8217;s Equations</h3>
-
-  \[  \begin{aligned}
-  \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \\   \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \\
-  \nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \\
-  \nabla \cdot \vec{\mathbf{B}} &amp; = 0 \end{aligned}
-  \]
+  {`
+  \\[  \\begin{aligned}
+  \\nabla \\times \\vec{\\mathbf{B}} -\\, \\frac1c\\, \\frac{\\partial\\vec{\\mathbf{E}}}{\\partial t} &amp; = \\frac{4\\pi}{c}\\vec{\\mathbf{j}} \\\\   \\nabla \\cdot \\vec{\\mathbf{E}} &amp; = 4 \\pi \\rho \\\\
+  \\nabla \\times \\vec{\\mathbf{E}}\\, +\\, \\frac1c\\, \\frac{\\partial\\vec{\\mathbf{B}}}{\\partial t} &amp; = \\vec{\\mathbf{0}} \\\\
+  \\nabla \\cdot \\vec{\\mathbf{B}} &amp; = 0 \\end{aligned}
+  \\]
+  `}
 </section>
 
 <section>
   <h3>TeX Macros</h3>
-
   Here is a common vector space:
-  \[L^2(\R) = \set{u : \R \to \R}{\int_\R |u|^2 &lt; +\infty}\]
+  {`
+  \\[L^2(\\R) = \\set{u : \\R \\to \\R}{\\int_\\R |u|^2 &lt; +\\infty}\\]
+  `}
   used in functional analysis.
 </section>
 
@@ -76,11 +89,13 @@
     <h3>The Lorenz Equations</h3>
 
     <div class="fragment">
-      \[\begin{aligned}
-      \dot{x} &amp; = \sigma(y-x) \\
-      \dot{y} &amp; = \rho x - y - xz \\
-      \dot{z} &amp; = -\beta z + xy
-      \end{aligned} \]
+      {`
+      \\[\\begin{aligned}
+      \\dot{x} &amp; = \\sigma(y-x) \\\\
+      \\dot{y} &amp; = \\rho x - y - xz \\\\
+      \\dot{z} &amp; = -\\beta z + xy
+      \\end{aligned} \\]
+      `}
     </div>
   </section>
 
@@ -88,7 +103,9 @@
     <h3>The Cauchy-Schwarz Inequality</h3>
 
     <div class="fragment">
-      \[ \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right) \]
+      {`
+      \\[ \\left( \\sum_{k=1}^n a_k b_k \\right)^2 \\leq \\left( \\sum_{k=1}^n a_k^2 \\right) \\left( \\sum_{k=1}^n b_k^2 \\right) \\]
+      `}
     </div>
   </section>
 
@@ -96,19 +113,23 @@
     <h3>A Cross Product Formula</h3>
 
     <div class="fragment">
-      \[\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
-      \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
-      \frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\
-      \frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0
-      \end{vmatrix}  \]
+      {`
+      \\[\\mathbf{V}_1 \\times \\mathbf{V}_2 =  \\begin{vmatrix}
+      \\mathbf{i} &amp; \\mathbf{j} &amp; \\mathbf{k} \\\\
+      \\frac{\\partial X}{\\partial u} &amp;  \\frac{\\partial Y}{\\partial u} &amp; 0 \\\\
+      \\frac{\\partial X}{\\partial v} &amp;  \\frac{\\partial Y}{\\partial v} &amp; 0
+      \\end{vmatrix}  \\]
+      `}
     </div>
   </section>
 
   <section>
-    <h3>The probability of getting \(k\) heads when flipping \(n\) coins is</h3>
+    <h3>The probability of getting \\(k\\) heads when flipping \\(n\\) coins is</h3>
 
     <div class="fragment">
-      \[P(E)   = {n \choose k} p^k (1-p)^{ n-k} \]
+      {`
+      \\[P(E)   = {n \\choose k} p^k (1-p)^{ n-k} \\]
+      `}
     </div>
   </section>
 
@@ -116,9 +137,11 @@
     <h3>An Identity of Ramanujan</h3>
 
     <div class="fragment">
-      \[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
-      1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
-      {1+\frac{e^{-8\pi}} {1+\ldots} } } } \]
+      {`
+      \\[ \\frac{1}{\\Bigl(\\sqrt{\\phi \\sqrt{5}}-\\phi\\Bigr) e^{\\frac25 \\pi}} =
+      1+\\frac{e^{-2\\pi}} {1+\\frac{e^{-4\\pi}} {1+\\frac{e^{-6\\pi}}
+      {1+\\frac{e^{-8\\pi}} {1+\\ldots} } } } \\]
+      `}
     </div>
   </section>
 
@@ -126,8 +149,10 @@
     <h3>A Rogers-Ramanujan Identity</h3>
 
     <div class="fragment">
-      \[  1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots =
-      \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}\]
+      {`
+      \\[  1 +  \\frac{q^2}{(1-q)}+\\frac{q^6}{(1-q)(1-q^2)}+\\cdots =
+      \\prod_{j=0}^{\\infty}\\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}\\]
+      `}
     </div>
   </section>
 
@@ -135,20 +160,24 @@
     <h3>Maxwell&#8217;s Equations</h3>
 
     <div class="fragment">
-      \[  \begin{aligned}
-      \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \\   \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \\
-      \nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \\
-      \nabla \cdot \vec{\mathbf{B}} &amp; = 0 \end{aligned}
-      \]
+      {`
+      \\[  \\begin{aligned}
+      \\nabla \\times \\vec{\\mathbf{B}} -\\, \\frac1c\\, \\frac{\\partial\\vec{\\mathbf{E}}}{\\partial t} &amp; = \\frac{4\\pi}{c}\\vec{\\mathbf{j}} \\\\   \\nabla \\cdot \\vec{\\mathbf{E}} &amp; = 4 \\pi \\rho \\\\
+      \\nabla \\times \\vec{\\mathbf{E}}\\, +\\, \\frac1c\\, \\frac{\\partial\\vec{\\mathbf{B}}}{\\partial t} &amp; = \\vec{\\mathbf{0}} \\\\
+      \\nabla \\cdot \\vec{\\mathbf{B}} &amp; = 0 \\end{aligned}
+      \\]
+      `}
     </div>
   </section>
 
   <section>
     <h3>TeX Macros</h3>
 
+    {`
     Here is a common vector space:
-    \[L^2(\R) = \set{u : \R \to \R}{\int_\R |u|^2 &lt; +\infty}\]
+    \\[L^2(\\R) = \\set{u : \\R \\to \\R}{\\int_\\R |u|^2 &lt; +\\infty}\\]
     used in functional analysis.
+    `}
   </section>
-</section>-->
+</section>
 
