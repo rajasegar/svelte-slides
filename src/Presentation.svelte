@@ -14,13 +14,13 @@
     const partner = ['Svelte', 'Reveal.js'];
 </script>
 
-<Title/>
+<!--<Title/>
 <Love {partner}/>
 <GettingStarted/>
 <AutoAnimate/>
 <Backgrounds/>
 <Barebones/>
-<LayoutHelpers/>
+<LayoutHelpers/>-->
 <Markdown/>
 <Math/>
 <Media/>
