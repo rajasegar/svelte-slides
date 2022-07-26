@@ -1,5 +1,7 @@
 # Reveal.js + Svelte + Vite
 
+![Svelte Slides logo](public/svelte-slides.jpg)
+
 This template should help get you started creating awesome slide decks using [Reveal.js](https://revealjs.com) with Svelte in Vite.
 
 ## How does it work?
@@ -15,6 +17,7 @@ You can customize the `Reveal.js` setup in `src/config.js`.
 
 ## Sample slide
 ### src/Title.svelte
+You can insert code blocks using template literals inside `<pre>` and `<code>` elements.
 ```html
 <section>
 <h1>This is a sample slide</h1>
@@ -25,7 +28,6 @@ You can customize the `Reveal.js` setup in `src/config.js`.
 </ul>
 
 <h2>Sample code</h2>
-You can insert code blocks using template literals inside `<pre>` and `<code>` elements.
 
     <pre>
     <code data-line-numbers data-trim data-no-escape>
