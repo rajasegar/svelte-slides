@@ -44,54 +44,51 @@
 
 <section>
   <section data-auto-animate>
-    <pre data-id="code"><code data-line-numbers class="hljs" data-trim>
-    {`
-      import React, { useState } from 'react';
+			<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+					{@html `
+					<script>
+					let count = 0;
 
-      function Example() {
-        const [count, setCount] = useState(0);
+					function handleClick() {
+							count += 1;
+					}
+					</script>
 
-        return (
-          ...
-        );
-      }
-    `}
+					<button on:click={handleClick}>
+					Clicked {count} {count === 1 ? 'time' : 'times'}
+					</button>
+					`}
+    </code></pre>
+  </section>
+  <section data-auto-animate>
+			<pre data-id="code"><code data-line-numbers class="hljs" data-trim>
+					{@html `
+						<script>
+						function handleClick() {
+								alert('no more alerts')
+						}
+						</script>
+
+						<button on:click|once={handleClick}>
+						Click me
+						</button>
+						`}
     </code></pre>
   </section>
   <section data-auto-animate>
     <pre data-id="code"><code data-line-numbers class="hljs" data-trim>
-    {`
-      function Example() {
-        const [count, setCount] = useState(0);
+    {@html `
+						<script>
+						function handleClick() {
+								// A comment
+								alert('no more alerts')
+						}
+						</script>
 
-        return (
-          &lt;div&gt;
-            &lt;p&gt;You clicked {count} times&lt;/p&gt;
-            &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
-              Click me
-            &lt;/button&gt;
-          &lt;/div&gt;
-        );
-      }
-    `}
-    </code></pre>
-  </section>
-  <section data-auto-animate>
-    <pre data-id="code"><code data-line-numbers class="hljs" data-trim>
-    {`
-      function Example() {
-        // A comment!
-        const [count, setCount] = useState(0);
-
-        return (
-          &lt;div&gt;
-            &lt;p&gt;You clicked {count} times&lt;/p&gt;
-            &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
-              Click me
-            &lt;/button&gt;
-          &lt;/div&gt;
-        );
-      }
+			      <!-- Event modifiers -->
+						<button on:click|once={handleClick}>
+						Click me
+						</button>
     `}
     </code></pre>
   </section>
