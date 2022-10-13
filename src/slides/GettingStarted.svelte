@@ -9,4 +9,5 @@
         <li class="fragment fade-up">Create your Slides in <code>src/slides</code></li>
         <li class="fragment fade-up">Add your Slides in <code>Presentation.svelte</code></li>
     </ul>
+		<aside class="notes">This is an example of slide notes</aside>
 </section>

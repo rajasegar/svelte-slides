@@ -1,6 +1,7 @@
 import Highlight from 'reveal.js/plugin/highlight/highlight';
 import Markdown from 'reveal.js/plugin/markdown/markdown';
 import MathReveal from 'reveal.js/plugin/math/math';
+import RevealNotes from 'reveal.js/plugin/notes/notes';
 
 // Import theme
 import 'reveal.js/dist/theme/black.css';
@@ -15,7 +16,7 @@ export default {
     },
     // Reveal Config
     reveal: {
-        plugins: [Highlight, Markdown, MathReveal.MathJax2, MathReveal.KaTeX],
+        plugins: [Highlight, Markdown, MathReveal.MathJax2, MathReveal.KaTeX, RevealNotes],
         hash: true,
       mathjax2: {
         config: 'TeX-AMS_HTML-full',
