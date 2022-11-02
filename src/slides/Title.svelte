@@ -1,5 +1,7 @@
 <script>
     import { onMount } from 'svelte';
+ import Slide from '../lib/Slide.svelte';
+ import Code from '../lib/Code.svelte';
 
     let title;
     onMount(() => {
@@ -11,7 +13,7 @@
     });
 </script>
 
-<section>
+<Slide>
     <h2>
         {#await title}
             Wait a sec...
@@ -20,8 +22,7 @@
         {/await}
     </h2>
 
-    <pre>
-    <code data-line-numbers data-trim data-no-escape>
+		<Code lineNumbers trim noescape>
     {
     `const name = "hello world";
     if(name === 'hello') {
@@ -29,6 +30,5 @@
     }
     `
     }
-    </code>
-    </pre>
-</section>
+		</Code>
+</Slide>
