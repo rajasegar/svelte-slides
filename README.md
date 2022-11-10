@@ -60,6 +60,45 @@ The slide order is the order in which you layout your Svelte components.
 
 ```
 
+## Built-in Components
+### Slide
+A component for slide with all the options supported 
+```html
+<Slide bgColor="red">
+<h1>This is a sample slide</h1>
+<ul>
+<li>Apples</li>
+<li>Oranges</li>
+<li>Grapes</li>
+</Slide>
+```
+
+Please refer to `/src/lib/Slide.svelte` for more information about the props.
+
+
+### Code
+A component to render code blocks
+```html
+<Code trim={true} lineNumbers="1|2-4" >
+    {`
+      const name = "hello world";
+      if(name === 'hello') {
+        console.log('world');
+      }
+    `}
+</Code>
+```
+
+Please refer to `/src/lib/Code.svelte` for more information about the props.
+
+### Notes
+A component for speaker notes
+```html
+<Notes>
+Hello Everyone, I am using svelte-slides for this presentation
+</Notes>
+```
+
 ## Inspiration
 This project is inspired by [svelte-reveal-boilerplate](https://github.com/micschwarz/svelte-reveal-boilerplate/) 
 
