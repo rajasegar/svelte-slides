@@ -70,10 +70,11 @@ A component for slide with all the options supported
 <li>Apples</li>
 <li>Oranges</li>
 <li>Grapes</li>
+</ul>
 </Slide>
 ```
 
-Please refer to `/src/lib/Slide.svelte` for more information about the props.
+Please refer to [src/lib/Slide.svelte](src/lib/Slide.svelte) for more information about the props.
 
 
 ### Code
@@ -89,7 +90,7 @@ A component to render code blocks
 </Code>
 ```
 
-Please refer to `/src/lib/Code.svelte` for more information about the props.
+Please refer to [/src/lib/Code.svelte](/src/lib/Code.svelte) for more information about the props.
 
 ### Notes
 A component for speaker notes
