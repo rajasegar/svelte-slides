@@ -4,7 +4,7 @@
 
 <section>
     <h2>{partner.join(' + ')} = <span class="heart">&#x2764</span></h2>
-    Lets have fun!
+    <p class="text-pink-500">Lets have fun!</p>
 </section>
 
 <style>
