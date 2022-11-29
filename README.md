@@ -1,8 +1,9 @@
-# Reveal.js + Svelte + Vite
+# Reveal.js + Svelte + Vite + TailwindCSS
 
 ![Svelte Slides logo](public/svelte-slides.jpg)
 
 This template should help get you started creating awesome slide decks using [Reveal.js](https://revealjs.com) with Svelte in Vite.
+You can also use [TailwindCSS](https://tailwindcss.com) utility classes to style your slide contents.
 
 ## How does it work?
 - Your slides are both Svelte components and Reveal.js slides.
@@ -99,6 +100,14 @@ A component for speaker notes
 Hello Everyone, I am using svelte-slides for this presentation
 </Notes>
 ```
+
+### Youtube
+A component embedding YouTube videos
+```
+<Youtube url="https://www.youtube.com/watch?v=1lcPGnRL4Qo"/>
+```
+
+Please refer to [/src/lib/Youtube.svelte](/src/lib/Youtube.svelte) for more information about the props.
 
 ## Inspiration
 This project is inspired by [svelte-reveal-boilerplate](https://github.com/micschwarz/svelte-reveal-boilerplate/) 
